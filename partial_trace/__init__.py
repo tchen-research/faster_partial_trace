@@ -12,3 +12,6 @@ from .partial_trace_alg import *
 from .quantum_density import *
 from .spin_hamiltonian import *
 from .solvable_chain import *
+from .ground_state import *
+from .chebyshev import *
+from .bisection import *
