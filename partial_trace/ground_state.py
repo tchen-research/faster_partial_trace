@@ -27,7 +27,7 @@ def ground_state_function_smooth(h,H1,H2,d_a,d_b,tol=1e-15,k=1,β=1e5):
     Λk,Qk = sp.sparse.linalg.eigsh(H,k=k,which='SA')
     E0 = Λk[0]
     
-    out = fast_partial_trace_quadrature(H,Qk,Λk,m,d_a,d_b)
+    out = fast_partial_trace_quadrature(H,Qk,m,d_a,d_b,n_evec=0)
     
     β = 1/1e-4
     f = lambda x: np.exp(-β*(x-E0))
