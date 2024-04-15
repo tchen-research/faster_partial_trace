@@ -6,7 +6,6 @@ import matplotlib.pyplot as plt
 
 import os,sys
 sys.path.insert(0, '..')
-sys.path.append('/Users/xinranli/Documents/Python/Trace_Estimation/partial-trace-collab/power_law_chain')
 
 from partial_trace import *
 
